@@ -4,45 +4,55 @@
     border: 0;
     box-sizing: border-box;
     color: #a87300;
-    font-family: Gill Sans MT;
+    font-family: "Gill Sans MT", sans-serif;
 }
 
 html,
 body {
-    overflow: hidden;
     background-color: #1f1f1f;
+    height: 100%;
+    margin: 0;
+}
+
+body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
 }
 
 h1 {
     font-size: 60px;
     border: 1.5px solid #a87300;
     border-radius: 10px;
-    padding: 5px 16px 5px 16px;
+    padding: 5px 16px;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 h2 {
     font-size: 30px;
 }
 
+.striked {
+    text-decoration: line-through wavy firebrick 2px;
+}
+
 p {
     font-size: 16px;
-}
-
-div {
-    display: flex;
-    align-items: center;
-}
-
-span {
-    margin: 10px
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 img {
-    margin-top: 30px;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
