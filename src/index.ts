@@ -6,7 +6,7 @@ interface Trip {
 const events: Trip[] = [
     { start: new Date("Mar 3, 2023 09:00:00").getTime(), end: new Date("Mar 6, 2023 00:00:00").getTime() },
     { start: new Date("Mar 1, 2024 10:30:00").getTime(), end: new Date("Mar 4, 2024 00:00:00").getTime() },
-    { start: new Date("Mar 7, 2025 07:00:00").getTime(), end: new Date("Mar 10, 2025 00:00:00").getTime() },
+    { start: new Date("Mar 7, 2025 07:00:00").getTime(), end: new Date("Mar 9, 2025 19:00:00").getTime() },
     { start: new Date("Mar 6, 2026 07:00:00").getTime(), end: new Date("Mar 9, 2026 00:00:00").getTime() },
     { start: new Date("Mar 5, 2027 07:00:00").getTime(), end: new Date("Mar 8, 2027 00:00:00").getTime() },
     { start: new Date("Mar 3, 2028 07:00:00").getTime(), end: new Date("Mar 6, 2028 00:00:00").getTime() },
@@ -44,6 +44,6 @@ setInterval(() => {
         countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     } else if (now >= currentEvent.start && now < currentEvent.end) {
-        countdownElement.innerHTML = "ENJOY :D";
+        countdownElement.innerHTML = "Gönn dir!";
     }
 }, 1000);
